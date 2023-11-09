@@ -1,0 +1,42 @@
+
+
+
+.h1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.desc-title{
+    text-align: center;
+    padding-bottom: 1em;
+    color: white;
+
+}
+
+.form-users{
+    display: block;
+    border: 2px solid;
+    margin: auto;
+    width: 20%;
+    padding-top: 50px;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+
+}
+
+
+
+.form-label{
+    font-weight: bold;    
+}
+
+.table{
+    opacity: 0.5;
+}
+
+.table:hover{
+    opacity: 0.9;
+}
