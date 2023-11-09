@@ -6,7 +6,7 @@ import UserEditForm from "./UserEditForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./custom.css";
-
+import image from "./assets/backgroundoffice5.jpg"
 
       
 
@@ -15,6 +15,12 @@ function App() {
 
   const [userData, setUserData] = useState({ name: "", profession: "", email: "" });
   const [selectedUserId, setSelectedUserId] = useState(null);
+  const backgroundStyles = {
+    backgroundImage: `url(${image})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    
+  };
 
 
   const fetchUsers = async () => {
@@ -37,7 +43,7 @@ function App() {
         fetchUsers();
     } catch (error) {
         console.error("Error updating user:", error);
-        // Handle the error as needed
+        
     }
   };
 
@@ -55,10 +61,7 @@ function App() {
 
   return (
     
-    <div style={{ backgroundImage: "url(/backgroundoffice.jpg)",
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: "cover",
-    }}>
+    <div style= {backgroundStyles}>
       
       
 
